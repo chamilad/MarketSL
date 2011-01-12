@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+	<TextView android:text="Enter Number To Send" android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<EditText android:text="" android:id="@+id/number"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+	<Button android:text="Send" android:id="@+id/send"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"  android:onClick="onSendButtonClick" ></Button>
+
+</LinearLayout>
