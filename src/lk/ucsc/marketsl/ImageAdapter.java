@@ -55,9 +55,9 @@ public class ImageAdapter extends BaseAdapter {
 			R.drawable.carrot, R.drawable.cucumber, R.drawable.cowpea,
 			R.drawable.dried_chili, R.drawable.elabatu, R.drawable.garcinia,
 			R.drawable.gingeli, R.drawable.ginger, R.drawable.green_chili,
-			R.drawable.gram_green, R.drawable.icon, R.drawable.kakeri,
-			R.drawable.kurakkan, R.drawable.icon, R.drawable.kolikuttu,
-			R.drawable.icon, R.drawable.karunka, R.drawable.kithul_honey,
+			R.drawable.gram_green, R.drawable.gotukola, R.drawable.kakeri,
+			R.drawable.kurakkan, R.drawable.kekulu, R.drawable.kolikuttu,
+			R.drawable.knokhol, R.drawable.karunka, R.drawable.kithul_honey,
 			R.drawable.kitul_treacle, R.drawable.long_beans, R.drawable.luffa,
 			R.drawable.leeks, R.drawable.lime, R.drawable.maize,
 			R.drawable.murunga, R.drawable.nadu_rice, R.drawable.okra,
@@ -66,7 +66,7 @@ public class ImageAdapter extends BaseAdapter {
 			R.drawable.samba_rice, R.drawable.snake_gourd,
 			R.drawable.seeni_kesel, R.drawable.sweet_potato,
 			R.drawable.soy_beans, R.drawable.thibbatu, R.drawable.tumeric,
-			R.drawable.icon, R.drawable.tomato, R.drawable.wing_bean };
+			R.drawable.tamarind, R.drawable.tomato, R.drawable.wing_bean };
 
 	private String[] mNames = { "Ambul Kesel", "Arecanut", "Ash-Plantain",
 			"Beans", "Big Onion", "Brinjal", "Batana", "Bitter Gourd",
