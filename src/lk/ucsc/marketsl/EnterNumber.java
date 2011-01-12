@@ -16,6 +16,7 @@ public class EnterNumber extends Activity {
 	EditText number;
 	Button send_button;
 	TextView display_msg;
+	String msg;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -24,20 +25,22 @@ public class EnterNumber extends Activity {
 
 		number = (EditText) findViewById(R.id.number);
 		display_msg = (TextView)findViewById(R.id.display_msg);
+		
+		Bundle extras = getIntent().getExtras();
+		msg = extras.getString("msg");
+		display_msg.setText(msg);
 
 	}
 
 	public void onSendButtonClick(View v) {
 		String number = this.number.getText().toString();
 
-		Bundle extras = getIntent().getExtras();
-		String msg = extras.getString("msg");
-		display_msg.setText(msg);
+		
 
 		PendingIntent pi = PendingIntent.getActivity(this, 0, new Intent(this,
 				EnterNumber.class), 0);
 		SmsManager sms = SmsManager.getDefault();
-		System.out.println(msg);
+		System.out.println("msg to send : " + msg);
 		//gives an IllegalStateException here
 		sms.sendTextMessage(number, null, msg, pi, null);
 
