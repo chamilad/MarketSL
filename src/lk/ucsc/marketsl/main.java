@@ -200,7 +200,7 @@ public class main extends Activity {
 	public void show_results(String crop_name) {
 		can_crops = "";
 		for (int i = 0; i < crops_array.length; i++) {
-			can_crops += "Crop" + (i + 1) + ":\n" + crops_array[i].getName()
+			can_crops += crops_array[i].getName()
 					+ " is priced " + crops_array[i].getPrice() + " at "
 					+ crops_array[i].getLocation() + "\n";
 		}
@@ -423,69 +423,4 @@ public class main extends Activity {
 		}
 		return 666;
 	}
-
-	/*
-	 * private void update_display() { read the crops_selected array and display
-	 * their values String[] from = new String[] { "crop_name", "location",
-	 * "price" }; int[] to = new int[] { R.id.crop_name_selected,
-	 * R.id.location_selected, R.id.price_selected };
-	 * 
-	 * List<HashMap<String, String>> fill_maps = new ArrayList<HashMap<String,
-	 * String>>(); for (int i = 0; i < crops_selected.toArray().length; i++) {
-	 * HashMap<String, String> map = new HashMap<String, String>();
-	 * map.put("crop_name", crops_selected.get(i).getName());
-	 * map.put("location", crops_selected.get(i).getLocation());
-	 * map.put("price", crops_selected.get(i).getPrice()); fill_maps.add(map); }
-	 * 
-	 * SimpleAdapter adapter = new SimpleAdapter(getApplicationContext(),
-	 * fill_maps, R.id.selected_crops_list, from, to);
-	 * selected_crops_list.setAdapter(adapter);
-	 * 
-	 * }
-	 */
-
-	/*
-	 * private Crop getCropByName(String tempCropName, Crop[] cropsArray) { for
-	 * (Crop c : cropsArray) { if (c.getName().equals(tempCropName)) {
-	 * System.out.println("temp crop name : " + tempCropName); return c; } }
-	 * return null; }
-	 */
-
-	/*
-	 * private void showResults(Crop[] crops_array) {
-	 * 
-	 * // create the dialog to show the results final Dialog results_dialog =
-	 * new Dialog(this); results_dialog.setTitle("Results");
-	 * results_dialog.setContentView(R.layout.result_dialog);
-	 * 
-	 * // create an array to populate the list String[] crop_name_array = new
-	 * String[crops_array.length]; for (int i = 0; i < crops_array.length; i++)
-	 * { crop_name_array[i] = crops_array[i].getName(); }
-	 * 
-	 * for (String cn : crop_name_array) { System.out.println("crop name : " +
-	 * cn); } ListView results_list_view = (ListView) results_dialog
-	 * .findViewById(R.id.results_list_view); results_list_view.setAdapter(new
-	 * ArrayAdapter<String>(this, R.layout.result_item, crop_name_array));
-	 * results_list_view.setTextFilterEnabled(true);
-	 * 
-	 * results_list_view.setOnItemClickListener(new OnItemClickListener() {
-	 * public void onItemClick(AdapterView<?> parent, View view, int position,
-	 * long id) { temp_crop_name = ((TextView) view).getText().toString();
-	 * 
-	 * // addBillEntry(((TextView) view).getText().toString());
-	 * onItemClickAdd(temp_crop_name, results_dialog); } });
-	 * System.out.println("about to show dialog"); results_dialog.show();
-	 * 
-	 * }
-	 */
-
-	/*
-	 * public void onItemClickAdd(String tempcropname, Dialog dialog){ Crop
-	 * insert_crop = getCropByName(temp_crop_name, crops_array);
-	 * System.out.println("insert cro123 : " + insert_crop.getName()); //
-	 * guaranteed that insert_crop will not be null
-	 * crops_selected.add(insert_crop); dialog.hide();
-	 * 
-	 * // add to display update_display(); }
-	 */
 }

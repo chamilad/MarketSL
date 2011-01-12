@@ -3,18 +3,18 @@
 	android:layout_width="fill_parent" android:layout_height="wrap_content"
 	android:orientation="vertical">
 	<TextView android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:text="Enter Crop Name" />
+		android:layout_height="wrap_content" android:text="@string/enter_crop_name" />
 
 	<AutoCompleteTextView android:id="@+id/autocomplete_crop"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
 		android:layout_marginLeft="5dp" />
 
-	<Button android:text="Get Info" android:id="@+id/submit_crop"
+	<Button android:text="@string/get_info_button" android:id="@+id/submit_crop"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
 		android:onClick="submit_query"></Button>
 		
 		<TextView android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:text="Or Browse by Scrolling" />
+		android:layout_height="wrap_content" android:text="@string/browse_by_scrolling" />
 
 	<GridView xmlns:android="http://schemas.android.com/apk/res/android"
 		android:id="@+id/gridview" android:layout_width="fill_parent"

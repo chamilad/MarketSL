@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, main!</string>
-    <string name="app_name">MarketSL</string>
-    
-    <string-array name="crops_array">
+	<string name="hello">Hello World, main!</string>
+	<string name="app_name">MarketSL</string>
+	<string name="enter_crop_name">Enter Crop Name</string>
+	<string name="get_info_button">Get Info</string>
+	<string name="browse_by_scrolling">Or Browse by Scrolling</string>
+	<string name="sms_sent">SMS Sent.</string>
+	<string name="enter_number_sms">Enter Number To Send</string>
+	<string name="send_btn">Send</string>
+	<string name="sms_this_menu">SMS This</string>
+
+	<string-array name="crops_array">
 		<item>Ambul Kesel</item>
 		<item>Arecanut</item>
 		<item>Ash-Plantain</item>
@@ -64,8 +71,8 @@
 		<item>Tomato</item>
 		<item>Wing Bean</item>
 	</string-array>
-	
-	 <string-array name="crop_codes_array">
+
+	<string-array name="crop_codes_array">
 		<item>ABK</item>
 		<item>ARC</item>
 		<item>ASP</item>

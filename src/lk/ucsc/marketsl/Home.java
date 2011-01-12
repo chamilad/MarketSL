@@ -13,7 +13,7 @@ import android.widget.AdapterView.OnItemClickListener;
 public class Home extends Activity {
 	AutoCompleteTextView crop_name_ac;
 	String[] CROPS;
-	
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,28 +24,28 @@ public class Home extends Activity {
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				R.layout.crop_list_auto_item, CROPS);
 		crop_name_ac.setAdapter(adapter);
-		
-		GridView gridview = (GridView) findViewById(R.id.gridview);
-	    gridview.setAdapter(new ImageAdapter(this));
 
-	    gridview.setOnItemClickListener(new OnItemClickListener() {
-	        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-	            //Toast.makeText(Home.this, "" + position + " tag : " + (String)v.getTag(), Toast.LENGTH_SHORT).show();
-	        	String crop_name = (String)v.getTag();
-	    		Intent intent = new Intent(getApplicationContext(), main.class);
-	        	intent.putExtra("crop_name", crop_name);
-	    		startActivity(intent);
-	        }
-	    });
+		GridView gridview = (GridView) findViewById(R.id.gridview);
+		gridview.setAdapter(new ImageAdapter(this));
+
+		gridview.setOnItemClickListener(new OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View v,
+					int position, long id) {
+				// Toast.makeText(Home.this, "" + position + " tag : " +
+				// (String)v.getTag(), Toast.LENGTH_SHORT).show();
+				String crop_name = (String) v.getTag();
+				Intent intent = new Intent(getApplicationContext(), main.class);
+				intent.putExtra("crop_name", crop_name);
+				startActivity(intent);
+			}
+		});
 	}
-	
+
 	public void submit_query(View v) {
 		String crop_name = crop_name_ac.getText().toString();
 		Intent intent = new Intent(getApplicationContext(), main.class);
-    	intent.putExtra("crop_name", crop_name);
+		intent.putExtra("crop_name", crop_name);
 		startActivity(intent);
 	}
-	
 
-	
 }

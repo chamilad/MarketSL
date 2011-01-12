@@ -8,19 +8,22 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class EnterNumber extends Activity {
 
 	EditText number;
 	Button send_button;
-
+	TextView display_msg;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.enter_number);
 
 		number = (EditText) findViewById(R.id.number);
+		display_msg = (TextView)findViewById(R.id.display_msg);
 
 	}
 
@@ -29,6 +32,7 @@ public class EnterNumber extends Activity {
 
 		Bundle extras = getIntent().getExtras();
 		String msg = extras.getString("msg");
+		display_msg.setText(msg);
 
 		PendingIntent pi = PendingIntent.getActivity(this, 0, new Intent(this,
 				EnterNumber.class), 0);

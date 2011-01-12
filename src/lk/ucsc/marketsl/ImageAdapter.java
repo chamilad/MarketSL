@@ -80,4 +80,6 @@ public class ImageAdapter extends BaseAdapter {
 			"Potato", "Radish", "Red Onion", "Samba Rice", "Snake Gourd",
 			"Seeni Kesel", "Sweet Potato", "Soya Beans", "Thibbatu", "Tumeric",
 			"Tamarind", "Tomato", "Wing Bean" };
+	
+	//private String[] mNames2 = getResources().getStringArray(R.array.crops_array);
 }
