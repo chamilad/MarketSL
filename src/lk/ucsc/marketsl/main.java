@@ -323,7 +323,7 @@ public class main extends Activity {
 			return R.drawable.gram_green;
 		}
 		if (crop_name.equals("Gotukola")) {
-			return R.drawable.icon;
+			return R.drawable.gotukola;
 		}
 		if (crop_name.equals("Kakeri")) {
 			return R.drawable.kakeri;
@@ -332,13 +332,13 @@ public class main extends Activity {
 			return R.drawable.kurakkan;
 		}
 		if (crop_name.equals("Kekulu Rice")) {
-			return R.drawable.icon;
+			return R.drawable.kekulu;
 		}
 		if (crop_name.equals("Kolikuttu")) {
 			return R.drawable.kolikuttu;
 		}
 		if (crop_name.equals("Knolkhol")) {
-			return R.drawable.icon;
+			return R.drawable.knokhol;
 		}
 		if (crop_name.equals("Karunka")) {
 			return R.drawable.karunka;
@@ -413,7 +413,7 @@ public class main extends Activity {
 			return R.drawable.tumeric;
 		}
 		if (crop_name.equals("Tamarind")) {
-			return R.drawable.icon;
+			return R.drawable.tamarind;
 		}
 		if (crop_name.equals("Tomato")) {
 			return R.drawable.tomato;
