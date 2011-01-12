@@ -1,0 +1,22 @@
+MarketSL - Group 1 assignment - Mobile Computing - BICT Final Year. 
+
+Steps To Compile
+================
+
+1) Import the Eclipse project 
+2) Build.
+3) Minimum Android 2.2 (Google API ver 8) is needed.
+
+User Interface
+==============
+
+There are two ways to get the information of a crop. You can type in to the text box on the top of the screen. It will autocomplete the crop name for you. Then click on "Get Info" button to get the crop information.
+
+The other way is to browse the crops available which are listed under the text box. You can scroll down and click on any crop to get its information.
+
+After the information is displayed you can send it as a SMS to someone using the "SMS This" menu item. 
+
+Warning
+=======
+
+SMS feature does not work in the emulator. 
